@@ -156,7 +156,7 @@ maestros = cargar_maestros()
 # 4. INTERFAZ Y PROCESO (CON GESTIÓN DE ALIAS)
 # ==========================================
 
-st.title("Recordando NLP")
+st.title("Prueba Nombres y Comentarios")
 
 if not maestros:
     st.error("❌ Error Crítico: Falta 'base_om.xlsx'.")
@@ -290,4 +290,5 @@ with tab_admin:
         df_ver = pd.read_excel('alias_proveedores.xlsx')
         st.dataframe(df_ver, use_container_width=True, hide_index=True)
     except:
+
         st.info("Aún no hay alias registrados.")
